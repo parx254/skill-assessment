@@ -1,28 +1,14 @@
+
 @font-face{font-family:MontHeavy;src:url("webfonts/Mont-Heavy.ttf") format("opentype")}
 @font-face{font-family:MontLight;src:url("webfonts/Mont-Light.ttf") format("opentype")}
 @font-face{font-family:MontBold;src:url("webfonts/Mont-SemiBold.ttf") format("opentype")}
 @font-face{font-family:MontBlack;src:url("webfonts/Mont-Black.ttf") format("opentype")}
-footer{
-float: right;
-    width: 100%;
-    position: absolute;
-    height: inherit;
-    background: #f5f5f5;
+*{
+    margin-left: 0%;
+    margin-top: 0%
 }
-.callus{
-    padding-top:  5px;
-}
-.footer-content{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 40px;
-}
-footer .column{
-    width: 33.3333333333333%;
-    float: left;
-    display: block;
-    background: inherit;
-}
+
+
 h1{
     font-family:'Mont-Heavy',sans-serif;
     color: #1b1209;
@@ -39,6 +25,9 @@ h4{
 }
 h5{
     font-size: 20px;
+}
+footer h3{
+    color: orange;
 }
 footer h5{
     font-size: 16px;
@@ -58,14 +47,15 @@ h2, h3, h4, h5{
 @media screen and (max-width:800px){
     footer .column{width: 50%}
     h1{ font-size: 24px}
+
     p{font-size: 12px}
     .footer-content{margin-left: 2%; margin-right: 2%}
 }
 .leftaligncontent{
-    width:50%;
+    width: 50%;
     display: block;
     float: left;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .rightaligncontent{
     width: 50%;
@@ -73,8 +63,66 @@ h2, h3, h4, h5{
     margin-top: 5%;
         display: block;
 }
-footer h3{
-    color: orange;
+.callus{
+    padding-top:  5px;
+}
+footer{
+float: right;
+    width: 100%;
+    position: absolute;
+    height: inherit;
+    background: #f5f5f5;
+}
+.footer-content{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+}
+footer .column{
+    width: 33.3333333333333%;
+    float: left;
+    display: block;
+    background: inherit;
+}
+.social-icons{
+    border-radius: 50%;
+    padding: 10px;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    display: inline-block;
+    transition:.5s .5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out
+}
+.socialcontainer{
+    border-top: 2px dashed orange;
+}
+.facebook{
+    background: blue;
+}
+.facebook:hover{
+    background: darkblue;
+}
+a{
+    color: #fff;
+}
+.youtube{
+    background: red;
+}
+.youtube:hover{
+    background: darkred;
+}
+.instagram{
+    background: darkblue;
+}
+.instagram:hover{
+    background: purple;
+}
+.twitter{
+    background: skyblue;
+}
+.twitter:hover{
+    background: blue;
 }
 .hero-image-container{
     position: relative;
@@ -93,7 +141,6 @@ nav{
 form .submit{
     background: orange;
     border-radius: 5px;
-        cursor: pointer;
     padding: 10px;
     width: 100px;
     color: #1b1209;
@@ -111,7 +158,7 @@ body{
     background: #ffffff;
 }
 
-.contact-form{
+.loan-form{
     background: #1b1209;
     text-align: center;
     color: #ffffff;
@@ -119,7 +166,7 @@ body{
     width: 60%;
     float: right;
 }
-.contact-form h3{
+.loan-form h3{
     color: #ffffff;
     font-size: 20px;
 }
@@ -133,7 +180,6 @@ button{
     background: #1b1209;
     color: #ffffff;
     padding: 5px 20px;
-    cursor: pointer;
     border-radius: 5px;
     transition:.5s .5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;font-size:12px}
 
@@ -159,8 +205,4 @@ button h3{
     width: 60px;
     float: left;
     align-content: left;
-}
-*{
-    margin-left: 0%;
-    margin-top: 0%
 }
