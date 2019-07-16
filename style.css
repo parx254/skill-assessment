@@ -3,10 +3,21 @@
 @font-face{font-family:MontLight;src:url("webfonts/Mont-Light.ttf") format("opentype")}
 @font-face{font-family:MontBold;src:url("webfonts/Mont-SemiBold.ttf") format("opentype")}
 @font-face{font-family:MontBlack;src:url("webfonts/Mont-Black.ttf") format("opentype")}
+/*universal operator */
 *{
     margin-left: 0%;
     margin-top: 0%
 }
+body{
+    width: 100%;
+    background: #ffffff;
+        font-family:'MontLight',sans-serif;
+}
+.contentcontainer{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*font tags */
 h1{
     font-family:'Mont-Heavy',sans-serif;
     color: #1b1209;
@@ -38,10 +49,33 @@ h2, h3, h4, h5{
     font-family:'Mont-SemiBold',sans-serif;
     color: #1b1209;
 }
-.hero-context{
-    margin-right: 10%;
-    margin-left: 10%;
-    }
+.button h3{
+    color: #ffffff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+/*nav section */
+nav{
+    background: linear-gradient(to right, yellow, orange);
+    height: 60px;
+    width: 100%;
+}
+.navlogo img{
+    height: 40px;
+    padding-top: 5px;
+    width: 60px;
+    float: left;
+    align-content: left;
+}
+.callus{
+    padding-top:  5px;
+    float: right;
+    text-align: right;
+}
+/*media queries */
 @media screen and (max-width:800px){
     footer .column{width: 50%}
     h1{ font-size: 24px}
@@ -49,6 +83,13 @@ h2, h3, h4, h5{
     p{font-size: 12px}
     .footer-content{margin-left: 2%; margin-right: 2%}
 }
+
+/*hero section */
+.hero-context{
+    margin-right: 10%;
+    margin-left: 10%;
+    }
+    
 .leftaligncontent{
     width: 50%;
     display: block;
@@ -61,9 +102,58 @@ h2, h3, h4, h5{
     margin-top: 5%;
         display: block;
 }
-.callus{
-    padding-top:  5px;
+.hero-image-container{
+    position: relative;
+    height: 100%;
+background-image: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, -0.5)), url("city.jpg");
+    background-color: rgba(0,0,0,0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative}
+  .apply-today-button{
+    background: #1b1209;
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition:.5s .5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;font-size:12px}
+
+.apply-today-button:hover{
+    background: orange;
 }
+/*hero loan form section */
+form .submit{
+    background: orange;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    color: #1b1209;
+    transition:.5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out
+}
+form .submit:hover{background: darkorange;color: #1b1209}
+form input{
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.loan-form{
+    background: #1b1209;
+    text-align: center;
+    color: #ffffff;
+    padding: 5%;
+    width: 60%;
+    float: right;
+}
+.loan-form h3{
+    color: #ffffff;
+    font-size: 20px;
+}
+.form-group input{margin-left: 5px; background:#ffffff;border:0;border-bottom:1px solid #ccc;font-family:'MontLight',sans-serif;color:darkgray; background: #f5f5f5; margin-bottom:4px;margin-top:4px;outline:0;border-radius:0; border-radius: 5px; transition:.5s .5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;font-size:12px}
+.form-group input{height:45px; ; color:#ffffff; margin: 30px}
+
+/*footer section */
 footer{
 float: right;
     width: 100%;
@@ -85,6 +175,11 @@ footer .column{
     display: block;
     background: inherit;
 }
+.logo img{
+    height: 40px;
+    width: 60px;
+    position: inherit;
+}
 .social-icons{
     border-radius: 50%;
     padding: 10px;
@@ -104,10 +199,7 @@ footer .column{
 .facebook:hover{
     background: darkblue;
 }
-a{
-    color: #fff;
-    text-decoration: none;
-}
+
 .youtube{
     background: red;
 }
@@ -126,85 +218,8 @@ a{
 .twitter:hover{
     background: blue;
 }
-.hero-image-container{
-    position: relative;
-    height: 100%;
-background-image: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, -0.5)), url("city.jpg");
-    background-color: rgba(0,0,0,0.5);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative}
-nav{
-    background: linear-gradient(to right, yellow, orange);
-    height: 60px;
-    width: 100%;
-}
-form .submit{
-    background: orange;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100px;
-    color: #1b1209;
-    transition:.5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out
-}
-form .submit:hover{background: darkorange;color: #1b1209}
-form input{
-    width: 90%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
-body{
-    width: 100%;
-    background: #ffffff;
-        font-family:'MontLight',sans-serif;
 
-}
-.loan-form{
-    background: #1b1209;
-    text-align: center;
-    color: #ffffff;
-    padding: 5%;
-    width: 60%;
-    float: right;
-}
-.loan-form h3{
-    color: #ffffff;
-    font-size: 20px;
-}
-.form-group input{margin-left: 5px; background:#ffffff;border:0;border-bottom:1px solid #ccc;font-family:'MontLight',sans-serif;color:darkgray; background: #f5f5f5; margin-bottom:4px;margin-top:4px;outline:0;border-radius:0; border-radius: 5px; transition:.5s .5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;font-size:12px}
-.form-group input{height:45px; ; color:#ffffff; margin: 30px}
-.callus{
-    float: right;
-    text-align: right;
-}
-.apply-today-button{
-    background: #1b1209;
-    color: #ffffff;
-    padding: 5px 20px;
-    border-radius: 5px;
-    transition:.5s .5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;font-size:12px}
 
-.apply-today-button:hover{
-    background: orange;
-}
-.button h3{
-    color: #ffffff;
-}
-.contentcontainer{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.logo img{
-    height: 40px;
-    width: 60px;
-    position: inherit;
-}
-.navlogo img{
-    height: 40px;
-    padding-top: 5px;
-    width: 60px;
-    float: left;
-    align-content: left;
-}
+
+
+
