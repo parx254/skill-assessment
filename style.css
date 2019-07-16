@@ -7,8 +7,6 @@
     margin-left: 0%;
     margin-top: 0%
 }
-
-
 h1{
     font-family:'Mont-Heavy',sans-serif;
     color: #1b1209;
@@ -73,6 +71,9 @@ float: right;
     height: inherit;
     background: #f5f5f5;
 }
+footer a{
+    color: blue;
+}
 .footer-content{
     margin-left: 10%;
     margin-right: 10%;
@@ -105,6 +106,7 @@ footer .column{
 }
 a{
     color: #fff;
+    text-decoration: none;
 }
 .youtube{
     background: red;
@@ -116,7 +118,7 @@ a{
     background: darkblue;
 }
 .instagram:hover{
-    background: purple;
+    background: navy;
 }
 .twitter{
     background: skyblue;
@@ -156,8 +158,9 @@ form input{
 body{
     width: 100%;
     background: #ffffff;
-}
+        font-family:'MontLight',sans-serif;
 
+}
 .loan-form{
     background: #1b1209;
     text-align: center;
@@ -176,24 +179,23 @@ body{
     float: right;
     text-align: right;
 }
-button{
+.apply-today-button{
     background: #1b1209;
     color: #ffffff;
     padding: 5px 20px;
     border-radius: 5px;
     transition:.5s .5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;font-size:12px}
 
-button:hover{
+.apply-today-button:hover{
     background: orange;
 }
-button h3{
+.button h3{
     color: #ffffff;
 }
 .contentcontainer{
     margin-left: 10%;
     margin-right: 10%;
 }
-
 .logo img{
     height: 40px;
     width: 60px;
