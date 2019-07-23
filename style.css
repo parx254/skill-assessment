@@ -1,9 +1,7 @@
-
 @font-face{font-family:MontHeavy;src:url("webfonts/Mont-Heavy.ttf") format("opentype")}
 @font-face{font-family:MontLight;src:url("webfonts/Mont-Light.ttf") format("opentype")}
 @font-face{font-family:MontBold;src:url("webfonts/Mont-SemiBold.ttf") format("opentype")}
 @font-face{font-family:MontBlack;src:url("webfonts/Mont-Black.ttf") format("opentype")}
-/*universal operator */
 *{
     margin-left: 0%;
     margin-top: 0%
@@ -11,13 +9,12 @@
 body{
     width: 100%;
     background: #ffffff;
-        font-family:'MontLight',sans-serif;
 }
 .contentcontainer{
     margin-left: 10%;
     margin-right: 10%;
 }
-/*font tags */
+/*header and p tags*/
 h1{
     font-family:'Mont-Heavy',sans-serif;
     color: #1b1209;
@@ -35,9 +32,6 @@ h4{
 h5{
     font-size: 20px;
 }
-footer h3{
-    color: orange;
-}
 footer h5{
     font-size: 16px;
 }
@@ -49,20 +43,18 @@ h2, h3, h4, h5{
     font-family:'Mont-SemiBold',sans-serif;
     color: #1b1209;
 }
-.button h3{
-    color: #ffffff;
-}
-
 a{
     color: #fff;
-    text-decoration: none;
 }
-/*nav section */
+
+
+/*nav content*/
 nav{
     background: linear-gradient(to right, yellow, orange);
     height: 60px;
     width: 100%;
 }
+
 .navlogo img{
     height: 40px;
     padding-top: 5px;
@@ -71,37 +63,12 @@ nav{
     align-content: left;
 }
 .callus{
-    padding-top:  5px;
     float: right;
     text-align: right;
-}
-/*media queries */
-@media screen and (max-width:800px){
-    footer .column{width: 50%}
-    h1{ font-size: 24px}
-
-    p{font-size: 12px}
-    .footer-content{margin-left: 2%; margin-right: 2%}
+    padding-top:  5px;
 }
 
-/*hero section */
-.hero-context{
-    margin-right: 10%;
-    margin-left: 10%;
-    }
-    
-.leftaligncontent{
-    width: 50%;
-    display: block;
-    float: left;
-    margin-top: 5%;
-}
-.rightaligncontent{
-    width: 50%;
-    float: right;
-    margin-top: 5%;
-        display: block;
-}
+/*hero content*/
 .hero-image-container{
     position: relative;
     height: 100%;
@@ -111,24 +78,19 @@ background-image: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, -0.5)), url
   background-repeat: no-repeat;
   background-size: cover;
   position: relative}
-  .apply-today-button{
-    background: #1b1209;
-    color: #ffffff;
-    padding: 5px 20px;
-    border-radius: 5px;
-    transition:.5s .5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;font-size:12px}
 
-.apply-today-button:hover{
-    background: orange;
-}
-/*hero loan form section */
+.hero-context{
+    margin-right: 10%;
+    margin-left: 10%;
+    }
+
 form .submit{
     background: orange;
     border-radius: 5px;
-    cursor: hand;
     padding: 10px;
     width: 100px;
     color: #1b1209;
+    cursor: hand;
     transition:.5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out
 }
 form .submit:hover{background: darkorange;color: #1b1209}
@@ -138,7 +100,6 @@ form input{
     margin-bottom: 5px;
     border-radius: 5px;
 }
-
 .loan-form{
     background: #1b1209;
     text-align: center;
@@ -151,10 +112,56 @@ form input{
     color: #ffffff;
     font-size: 20px;
 }
-.form-group input{margin-left: 5px; background:#ffffff;border:0;border-bottom:1px solid #ccc;font-family:'MontLight',sans-serif;color:darkgray; background: #f5f5f5; margin-bottom:4px;margin-top:4px;outline:0;border-radius:0; border-radius: 5px; transition:.5s .5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;font-size:12px}
-.form-group input{height:45px; ; color:#ffffff; margin: 30px}
+.form-group input{margin-left: 5px;
+    background:#ffffff;
+    border:0;
+    border-bottom:1px solid #ccc;
+    font-family:'MontLight',sans-serif;
+    color:darkgray;
+    background: #f5f5f5;
+    margin-bottom:4px;
+    margin-top:4px;
+    outline:0;
+    border-radius: 5px; 
+    transition:.5s .5s ease-in-out;
+    -webkit-transition:.5s ease-in-out;
+    -moz-transition:.5s ease-in-out;
+    -o-transition:.5s ease-in-out;
+    font-size:12px}
+.form-group input{height:45px;
+    color:#ffffff;
+    margin: 30px}
 
-/*footer section */
+
+button{
+    background: #1b1209;
+    color: #ffffff;
+    cursor: hand;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition:.5s .5s ease-in-out;-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;font-size:12px}
+
+button:hover{
+    background: orange;
+}
+button h3{
+    color: #ffffff;
+}
+
+.leftaligncontent{
+    width: 50%;
+    display: block;
+    float: left;
+    margin-top: 5%;
+}
+.rightaligncontent{
+    width: 50%;
+    float: right;
+    margin-top: 5%;
+        display: block;
+}
+
+/*footer code*/
 footer{
 float: right;
     width: 100%;
@@ -162,8 +169,8 @@ float: right;
     height: inherit;
     background: #f5f5f5;
 }
-footer a{
-    color: blue;
+footer h3{
+    color: orange;
 }
 .footer-content{
     margin-left: 10%;
@@ -176,11 +183,7 @@ footer .column{
     display: block;
     background: inherit;
 }
-.logo img{
-    height: 40px;
-    width: 60px;
-    position: inherit;
-}
+
 .social-icons{
     border-radius: 50%;
     padding: 10px;
@@ -220,7 +223,16 @@ footer .column{
     background: blue;
 }
 
+.logo img{
+    height: 40px;
+    width: 60px;
+    position: inherit;
+}
+/*media queries*/
+@media screen and (max-width:800px){
+    footer .column{width: 50%}
+    h1{ font-size: 24px}
 
-
-
-
+    p{font-size: 12px}
+    .footer-content{margin-left: 2%; margin-right: 2%}
+}
